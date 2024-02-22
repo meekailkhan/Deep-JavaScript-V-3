@@ -124,52 +124,48 @@
 // let userobj2 = createUser("mujaahid","aslam","mujaahid@gmail.com",25,"my address2")
 
 
-function CreateUser(name,finalName,emailAdd,userAge,address) {
-//     let user = Object.create(CreateUser.prototype);
-
-    this.firstName = name;
-    this.lastName = finalName;
-    this.email = emailAdd;
-    this.age = userAge;
-    this.address = address;
-    
-}
-
-
-
-
-CreateUser.prototype.about = function(){
-        return this.firstName, this.age
-};
-
-CreateUser.prototype.is18 = function() {
-        return this.age>=18
-};
-
-CreateUser.prototype.info = function(){
-        return `${this.firstName} email is ${this.email}`
-}
-
-// class CreateUser{
-//         constructor(name,finalName,emailAdd,userAge,address){
-//                 this.firstName = name;
-//                 this.lastName = finalName;
-//                 this.email = emailAdd;
-//                 this.age = userAge;
-//                 this.address = address;
-//         }
-//         about() {
-//                 return this.firstName, this.age
-//         };
-//         is18() {
-//                 return this.age>=18
-//         };
-//         info() {
-//                 return `${this.firstName} email is ${this.email}`
-//         }
-
+// function CreateUser(name,finalName,emailAdd,userAge,address) {
+//     // let user = Object.create(CreateUser.prototype);
+//     this.firstName = name;
+//     this.lastName = finalName;
+//     this.email = emailAdd;
+//     this.age = userAge;
+//     this.address = address;
 
 // }
+
+// CreateUser.prototype.about = function(){
+//         return this.firstName, this.age
+// };
+
+// CreateUser.prototype.is18 = function() {
+//         return this.age>=18
+// };
+
+// CreateUser.prototype.info = function(){
+//         return `${this.firstName} email is ${this.email}`
+// }
+
+class CreateUser{
+        constructor(name,finalName,emailAdd,userAge,address){
+                this.firstName = name;
+                this.lastName = finalName;
+                this.email = emailAdd;
+                this.age = userAge;
+                this.address = address;
+        }
+        about() {
+                return this.firstName, this.age
+        };
+        is18() {
+                return this.age>=18
+        };
+        info() {
+                return `${this.firstName} email is ${this.email}`
+        }
+
+
+}
 
 
 
@@ -208,8 +204,3 @@ console.log(userobj2);
 // console.log(obj3.key1)
 // console.log(obj3.key3)
 
-
-let THIS = {}
-THIS.name = "meekail"
-
-console.log(THIS)
