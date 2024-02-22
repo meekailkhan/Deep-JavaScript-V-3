@@ -6,3 +6,8 @@
 // }
 
 // let a = new ask("what is your goal")
+
+var a = "meekail";
+console.log(this.a);
+console.log(this)
+
