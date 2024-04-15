@@ -32,7 +32,7 @@ console.warn(plusplusFn(true));//1+1=2
 ```
 
 # Abstract Opretion
->In JavaScript three three abstract operation
+>In JavaScript three abstract operation
 >ToString
 >ToNumber
 >ToBoolean
@@ -96,7 +96,7 @@ console.log(Boolean(function Fn(){})) // true
 # Cheak Equality
 > In javaScript we can cheak equality of any value and data type 
 > If we want cheak only value is equal or not equal so we can use double equals == operator this is cheak loose equality 
->If we want strictly cheak i mean value and data type both are cheaking in this case in this case we use triple equal === opretor
+>If we want strictly cheak it,s mean value and data type both are cheaking in this case in this case we use triple equal === opretor
 
 ```js
 var name = "meekail";
