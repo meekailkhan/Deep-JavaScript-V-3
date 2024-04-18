@@ -208,3 +208,21 @@ function hoursAttended(attend,Length){
     return false;
 }
 ```
+
+---
+## Imlicit Coercion
+>Implicit coercion are some time better and some time harmful 
+
+>Implicit coercion are show extra detail to the reader who usefull at some time and useless at some time
+
+#### usefull
+>when the reader only focus on importants
+
+#### dangerou
+>when the reader or coder can,t say any about of code and it result
+
+#### Better
+>when the reader or coder know all about code and it result 
+
+# cheacking internali
+>at the comperison with double equla it is allow coercion internali and convert both of value with same datatype but tripel equla operator is not allow coercion and if datatype not equla of both value,s return false
