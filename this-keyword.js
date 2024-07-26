@@ -100,22 +100,22 @@
 //     }
 // }
 
-// // // const user1 = new User("meekail",18)
-// // // console.log(user1.sayName())
-// // // console.log(user1)
+// const user1 = new User("meekail",18)
+// console.log(user1.sayName())
+// console.log(user1)
 
-// // userCreate = (name,age)=>{
-// //     let obj = {}
-// //     obj.name = name;
-// //     obj.age = age;
-// //     obj.info = function(){
-// //         return `${this.name}`
-// //     }
-// //     return obj
-// // }
+userCreate = (name,age)=>{
+    let obj = {}
+    obj.name = name;
+    obj.age = age;
+    obj.info = function(){
+        return `${this.name}`
+    }
+    return obj
+}
 
-// // const user1 = userCreate("meekail",18)
-// // console.log(user1.info())
+const user1 = userCreate("meekail",18)
+console.log(user1.info())
 
 "use strict"
 
