@@ -226,3 +226,32 @@ function hoursAttended(attend,Length){
 
 # cheacking internali
 >at the comperison with double equla it is allow coercion internali and convert both of value with same datatype but tripel equla operator is not allow coercion and if datatype not equla of both value,s return false
+
+## Abstract opretion and coercion 
+>In JavaScript type conversion we called corecion corecion means convert data type of any value into another data type for this proccess in JavaScript some abstract opration who work with specification 
+
+* **toPrimitive** => the work of abstract opration to change data type of non-primitive data type into primitive data type
+    * none primitive value like Object Arrays and Funtion etc.
+
+```js
+// toPrimitive
+
+let obj = {
+    valueOf(){
+        return 42;
+    },
+    toString(){
+        return "this is string text"
+    }
+}
+
+console.log(obj + 1); // 43
+console.log(String(obj)) // this is string text
+
+```
+
+In JavaScript we have 2 toPrimitive function
+1.__valueOf()__
+2.__toString()__
+
+> when we try to do somethig with object if it,s numeric opretion like calculation and mathametics so javascript autometically run **valueOf()** function if its failde to convert its datatype into number its try with **toString()** function if both are failde to convert data type its throw error 
